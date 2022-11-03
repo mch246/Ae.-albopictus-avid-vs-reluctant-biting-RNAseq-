@@ -5,7 +5,7 @@ Note that this pipeline was modified based on previous work by Sarah Marzec anal
 Information about sequence reads (raw read count, read alignment rate, etc.) for the data can be found in the following google sheets: ([link](https://docs.google.com/spreadsheets/d/1_RixzDGNsUlvhOMVCTXViuR_Rim8dNrS5joLMOwbsXo/edit#gid=0))
 
 ### Data Accession
-Data was generated at Georgetown by Mara, Peter, and Sam.
+Data was generated at Georgetown University using Ae. albopictus specimens collected from Manassas, Virginia in 2018 and maintained in the lab for 9 subsequent generations preceding sample collection
 
 The raw reads are available in NCBI’s short read archive (SRA) under accession number XXXXYYYY
 
