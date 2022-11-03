@@ -1,4 +1,5 @@
-# Workflow/pipeline details for the albopictus autogeny RNA-seq analysis
+# Workflow/pipeline details for the albopictus biting RNA-seq analysis
+Note that this pipeline was modified based on previous work by Sarah Marzec analyzing RNAseq data comparing gene expression differences in biting vs non biting samples of two Culex subspecies.  See here: https://github.com/srmarzec/Culex_Biting_RNAseq  
 
 ## Upstream 
 Information about sequence reads (raw read count, read alignment rate, etc.) for the data can be found in the following google sheets: ([link](https://docs.google.com/spreadsheets/d/1_RixzDGNsUlvhOMVCTXViuR_Rim8dNrS5joLMOwbsXo/edit#gid=0))
@@ -12,6 +13,8 @@ The raw reads are available in NCBI’s short read archive (SRA) under accession
 Trimmomatic (version 0.39) was used to trim sequence reads based on quality ([script](https://github.com/mch246/Ae.-albopictus-avid-vs-reluctant-biting-RNAseq-/blob/main/Albo_biting_trim_mRNA.SBATCH))
 
 FastQC (v0.11.9) was used for quality control visualization ([script](https://github.com/mch246/Ae.-albopictus-avid-vs-reluctant-biting-RNAseq-/blob/main/FastQC.SBATCH))
+
+Preliminary trimming and fastqc showed a poor "per sequence base content" for the first ~15 bases.  Most samples also had warnings or fail for "per sequence GC content" and "sequence duplication levels. We used HEADCROP flag to remove the first 15 bases. All other flags (TRAILING, SLIDINGWINDOW, and MINLEN) were general/default for basic quality of bases and did not result in much difference of trimming.
 
 ### Mapping
 We will be mapping with STAR (v2.7.1a).
