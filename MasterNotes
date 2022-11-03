@@ -19,7 +19,7 @@ Preliminary trimming and fastqc showed a poor "per sequence base content" for th
 ### Mapping
 We will be mapping with STAR (v2.7.1a).
 
-Mapping was done using our lab's newest Aedes albopictus reference genome, GenBank assembly accession: GCA_018104305.1 (https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/018/104/305/GCA_018104305.1_AalbF3/GCA_018104305.1_AalbF3_genomic.fna.gz) and the corresponding annotation file (https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/018/104/305/GCA_018104305.1_AalbF3/GCA_018104305.1_AalbF3_genomic.gbff.gz)
+Mapping was done using the following Aedes albopictus reference genome, GenBank assembly accession: GCA_018104305.1 (https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/018/104/305/GCA_018104305.1_AalbF3/GCA_018104305.1_AalbF3_genomic.fna.gz) and the corresponding annotation file (https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/018/104/305/GCA_018104305.1_AalbF3/GCA_018104305.1_AalbF3_genomic.gbff.gz)
 
 STAR (v2.7.1a) was used for indexing the genome ([script](https://github.com/mch246/Ae.-albopictus-avid-vs-reluctant-biting-RNAseq-/blob/main/STAR_index.SBATCH))
 
